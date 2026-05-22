@@ -1,9 +1,6 @@
 {
     "version": 2,
     "framework": "laravel",
-    "commands": {
-        "build": "php artisan config:cache && php artisan route:cache"
-    },
     "builds": [
         {
             "src": "public/index.php",
@@ -11,10 +8,6 @@
         }
     ],
     "routes": [
-        {
-            "src": "/(css|js|images)/(.*)",
-            "dest": "public/$1/$2"
-        },
         {
             "src": "/(.*)",
             "dest": "public/index.php"
